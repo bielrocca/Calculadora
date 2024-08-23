@@ -12,7 +12,7 @@ const handleButtonClick = (value) => {
     if (operator.value) {
       const result = calculateResult();
       val.value = result;
-      valA.value = result; 
+      valA.value = result;
       operator.value = null;
     } else {
       try {
@@ -36,10 +36,10 @@ const handleButtonClick = (value) => {
     currentInput.value = '';
   } else if (['+', '-', 'x', '/', '%'].includes(value)) {
     if (operator.value) {
-      valA.value = calculateResult(); 
+      valA.value = calculateResult();
       values.value = [];
     } else {
-      valA.value = parseFloat(values.value.join(''));
+      valA.value = parseFloat(values.value.join('')) || 0;
       values.value = [];
     }
     operator.value = value;
@@ -48,6 +48,11 @@ const handleButtonClick = (value) => {
     if (values.value.length > 0) {
       const lastIndex = values.value.length - 1;
       values.value[lastIndex] = (parseFloat(values.value[lastIndex]) * -1).toString();
+      updateCurrentInput();
+    }
+  } else if (value === ',') {
+    if (values.value.length > 0 && !values.value.includes('.')) {
+      values.value.push('.');
       updateCurrentInput();
     }
   } else {
@@ -215,7 +220,5 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
- 
 }
-
 </style>
