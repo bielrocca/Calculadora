@@ -89,7 +89,7 @@ watch(currentInput, () => {
 
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-12">
         <input type="text" :value="currentInput" readonly />
         <h2>Resultado: {{ val }}</h2>
@@ -98,102 +98,100 @@ watch(currentInput, () => {
     <div class="row">
       <div class="col-3">
         <button @click="handleButtonClick('7')">
-          <img src="/Calculadora/Botão-2.png" alt="Botão 7">
+          <img src="/Calculadora/sete.png" alt="Botão 7">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('8')">
-          <img src="/Calculadora/Botão-7.png" alt="Botão 8">
+          <img src="/Calculadora/numero-8.png" alt="Botão 8">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('9')">
-          <img src="/Calculadora/Botão-12.png" alt="Botão 9">
+          <img src="/Calculadora/numero-9.png" alt="Botão 9">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('+')">
-          <img src="/Calculadora/Botão-18.png" alt="Botão +">
+          <img src="/Calculadora/mais.png" alt="Botão +">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('4')">
-          <img src="/Calculadora/Botão-1.png" alt="Botão 4">
+          <img src="/Calculadora/numero-quatro.png" alt="Botão 4">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('5')">
-          <img src="/Calculadora/Botão-6.png" alt="Botão 5">
+          <img src="/Calculadora/numero-5.png" alt="Botão 5">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('6')">
-          <img src="/Calculadora/Botão-11.png" alt="Botão 6">
+          <img src="/Calculadora/seis.png" alt="Botão 6">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('-')">
-          <img src="/Calculadora/Botão-16.png" alt="Botão -">
+          <img src="/Calculadora/menos.png" alt="Botão -">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('1')">
-          <img src="/Calculadora/Botão-3.png" alt="Botão 1">
+          <img src="/Calculadora/numero-um.png" alt="Botão 1">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('2')">
-          <img src="/Calculadora/Botão-8.png" alt="Botão 2">
+          <img src="/Calculadora/numero-2.png" alt="Botão 2">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('3')">
-          <img src="/Calculadora/Botão-13.png" alt="Botão 3">
+          <img src="/Calculadora/numero-3.png" alt="Botão 3">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('x')">
-          <img src="/Calculadora/Botão-17.png" alt="Botão x">
+          <img src="/Calculadora/asterisco.png" alt="Botão x">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick(',')">
-          <img src="/Calculadora/Botão-14.png" alt="Botão ,">
+          <img src="/Calculadora/virgula.png" alt="Botão ,">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('0')">
-          <img src="/Calculadora/Botão-9.png" alt="Botão 0">
+          <img src="/Calculadora/zero.png" alt="Botão 0">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('%')">
-          <img src="/Calculadora/Botão.png" alt="Botão %">
+          <img src="/Calculadora/por-cento.png" alt="Botão %">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('/')">
-          <img src="/Calculadora/Botão-15.png" alt="Botão /">
+          <img src="/Calculadora/golpear.png" alt="Botão /">
         </button>
       </div>
       <div class="col-3">
-        <button @click="handleButtonClick('CE')">
-          <img src="/Calculadora/Botão-5.png" alt="Botão CE">
+        <button @click="handleButtonClick('Space')">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('C')">
-          <img src="/Calculadora/Botão-10.png" alt="Botão C">
+          <img src="/Calculadora/letra-c.png" alt="Botão C">
         </button>
       </div>
       <div class="col-3">
-        <button @click="handleButtonClick('+/-')">
-          <img src="/Calculadora/Botão-4.png" alt="Botão +/-">
+        <button @click="handleButtonClick('Space')">
         </button>
       </div>
       <div class="col-3">
         <button @click="handleButtonClick('=')">
-          <img src="/Calculadora/Botão-19.png" alt="Botão =">
+          <img src="/Calculadora/igual.png" alt="Botão =">
         </button>
       </div>
     </div>
@@ -208,7 +206,7 @@ button {
 }
 
 img {
-  width: 100%;
+  width: 80px;
   height: auto;
 }
 
